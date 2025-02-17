@@ -1,0 +1,10 @@
+public class ShoppingCart {
+    PaymentStrategy modalitàPagamento;
+
+    ShoppingCart(PaymentStrategy modalitàPagamento){
+        this.modalitàPagamento=modalitàPagamento;
+    }
+    void pay(){
+        modalitàPagamento.pay();
+    }
+}
